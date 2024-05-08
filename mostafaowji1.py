@@ -43,3 +43,9 @@ print('queue size is:', q.size())
 print('ra\'na', 'left the queue')
 print('front of queue is:', q.front())
 print('It was a queue.')
+#javab:
+def get_index(self, index):
+    if index < 0 or index >= self.num:
+        raise Exception("enter other number")
+    
+    return self.Q[(self.first + index) % self.max_size]
